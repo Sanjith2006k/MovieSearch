@@ -114,6 +114,5 @@ npm run lint     # Run ESLint
 - Keep `.env` and `.env.*` ignored in `.gitignore`
 - If a key is exposed, rotate it immediately
 
-## License
-
-This project is for learning and personal portfolio use. Add a license file if you plan to open-source it publicly.
+By
+## S Sanjith Kumar
