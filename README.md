@@ -57,7 +57,7 @@ movie-search-app/
 ### 1. Clone and install
 
 ```bash
-git clone <your-repo-url>
+git clone (https://github.com/Sanjith2006k/MovieSearch)
 cd movie-search-app
 npm install
 ```
