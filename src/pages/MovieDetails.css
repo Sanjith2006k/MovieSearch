@@ -1,0 +1,179 @@
+.hero {
+  min-height: 90vh;
+
+  background-size: cover;
+
+  background-position: center;
+
+  position: relative;
+
+  display: flex;
+
+  align-items: flex-end;
+}
+
+.hero::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to top,
+      #0b0b0b 10%,
+      rgba(0,0,0,.5) 50%,
+      rgba(0,0,0,.2) 100%
+    );
+}
+
+.hero-content {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 800px;
+
+  padding: 80px;
+}
+
+.hero-content h1 {
+  font-size: 5rem;
+
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+
+  color: #d1d1d1;
+}
+.info-section {
+  padding: 100px 10%;
+}
+.info-card {
+  display: flex;
+
+  gap: 50px;
+
+  padding: 40px;
+
+  border-radius: 30px;
+
+  background: rgba(255,255,255,0.05);
+
+  backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.info-card img {
+  width: 300px;
+
+  border-radius: 20px;
+}
+.info-card p {
+  line-height: 1.8;
+
+  color: #d1d5db;
+}
+.rating-section {
+  display: flex;
+
+  justify-content: center;
+
+  padding: 100px 0;
+}
+.rating-box {
+  width: 250px;
+  height: 250px;
+
+  border-radius: 40px;
+
+  background: #181818;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+.cast-section {
+  padding: 100px 10%;
+}
+
+.cast-section h2 {
+  margin-bottom: 30px;
+}
+.cast-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(150px, 1fr));
+
+  gap: 20px;
+}
+.cast-card {
+  text-align: center;
+}
+.cast-card img {
+  width: 100%;
+
+  border-radius: 20px;
+}
+.movie-stats {
+  margin-top: 40px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(180px, 1fr));
+
+  gap: 20px;
+}
+
+.movie-stats div {
+  background: rgba(255,255,255,.04);
+
+  padding: 20px;
+
+  border-radius: 20px;
+
+  backdrop-filter: blur(12px);
+}
+
+.movie-stats strong {
+  display: block;
+
+  margin-bottom: 10px;
+}
+
+.section-card {
+  max-width: 1400px;
+
+  margin: 40px auto;
+
+  padding: 40px;
+
+  border-radius: 30px;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.movie-row {
+  display: flex;
+
+  gap: 20px;
+
+  overflow-x: auto;
+
+  padding: 20px 0;
+}
+
+.movie-row::-webkit-scrollbar {
+  display: none;
+}

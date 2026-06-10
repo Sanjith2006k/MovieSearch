@@ -1,0 +1,46 @@
+.skeleton-card {
+  width: 220px;
+}
+
+.skeleton-image,
+.skeleton-title,
+.skeleton-text {
+  animation: pulse 1.5s infinite;
+
+  background:
+    linear-gradient(
+      90deg,
+      #222,
+      #333,
+      #222
+    );
+
+  background-size: 200%;
+}
+
+.skeleton-image {
+  height: 330px;
+  border-radius: 24px;
+}
+
+.skeleton-title {
+  height: 20px;
+  margin-top: 12px;
+  border-radius: 10px;
+}
+
+.skeleton-text {
+  height: 14px;
+  margin-top: 8px;
+  border-radius: 10px;
+}
+
+@keyframes pulse {
+  from {
+    background-position: 200%;
+  }
+
+  to {
+    background-position: -200%;
+  }
+}

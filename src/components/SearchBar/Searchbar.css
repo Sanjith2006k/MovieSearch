@@ -1,0 +1,28 @@
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.search-container input {
+  width: 600px;
+  max-width: 90%;
+
+  padding: 15px 20px;
+
+  border: none;
+  border-radius: 12px;
+
+  background: var(--card-bg);
+
+  color: white;
+  font-size: 16px;
+
+  outline: none;
+
+  transition: 0.3s;
+}
+
+.search-container input:focus {
+  box-shadow: 0 0 15px rgba(0, 191, 255, 0.5);
+}
